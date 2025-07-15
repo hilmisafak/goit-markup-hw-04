@@ -1,0 +1,298 @@
+/* General */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #ffffff;
+  color: #2e2f42;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  letter-spacing: 0.04em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+/* Header */
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e7e9fc;
+  padding: 24px 0;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1158px;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.logo-web {
+  color: #4d5ae5;
+}
+
+.logo-header {
+  margin-right: auto;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-item a {
+  color: #2e2f42;
+  font-weight: 500;
+}
+
+.nav-item a:hover,
+.nav-item a:focus,
+.nav-item a:active {
+  color: #404bbf;
+}
+
+.nav-item a:active {
+  text-decoration: underline;
+}
+
+.address {
+  font-style: normal;
+  margin-left: auto;
+}
+
+.address ul {
+  display: flex;
+  gap: 40px;
+  font-size: 14px;
+}
+
+.address a {
+  color: #434455;
+}
+
+.address-item a:hover,
+.address-item a:focus {
+  color: #404bbf;
+}
+
+/* Section - 1 */
+.sec-1 {
+  text-align: center;
+  background-color: #2e2f42;
+  color: #ffffff;
+  height: 600px;
+  background-image: url(../images/effective-background.jpg);
+}
+
+.title {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.btn {
+  padding: 16px 32px;
+  background-color: #4d5ae5;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px 0px #00000026;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #404bbf;
+}
+
+/* Seciton - 2 */
+.feature-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+}
+
+.feature-item {
+  flex: 1 1 250px;
+  max-width: 264px;
+}
+
+.feature-item h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.feature-item p {
+  color: #434455;
+}
+
+/* Section - 3 */
+.sec-3 {
+  background-color: #f4f4fd;
+  text-align: center;
+}
+
+.sec-3 h2 {
+  font-size: 36px;
+  margin-bottom: 72px;
+}
+
+.team-card {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-card-item {
+  background-color: #ffffff;
+  width: 264px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  box-shadow: 0px 2px 1px #2e2f4214;
+}
+
+.card-content {
+  padding: 32px 0;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.card-content p {
+  color: #434455;
+}
+
+/* Section - 4 */
+.sec-4 h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.project-card {
+  display: flex;
+  gap: 48px 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card-item {
+  background-color: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card-item div {
+  padding: 32px 16px;
+}
+
+.project-card-item h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.project-card-item p {
+  color: #434455;
+}
+
+.project-card-item img {
+  display: block;
+}
+
+.project-card-item .project-info {
+  padding: 32px 16px;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+}
+
+/* Footer */
+.footer {
+  background-color: #2e2f42;
+  color: #ffffff;
+  padding: 100px 0;
+  text-align: left;
+}
+
+.footer div {
+  max-width: 1158px;
+}
+
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer p {
+  max-width: 264px;
+  color: #f4f4fd;
+}
+
+.none {
+  display: none;
+}
